@@ -1,8 +1,5 @@
-/ExtraClasses/obj
-/ExtraClasses/bin
-/MessageService-master/bin
-/MessageService-master/.vs
-/MessageService-master/obj
-/MessageService-master/appsettings.Development.json
-/MessageService-master/MessageService.csproj.user
-/MessageService-master/*.user
+bin
+obj
+appsettings.Development.json
+*.user
+.vs
