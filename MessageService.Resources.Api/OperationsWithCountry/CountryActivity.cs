@@ -46,9 +46,13 @@ namespace MessageService.Resources.Api.OperationsWithCountry
             dict.Add(Country.Countries.Urkaine.ToString(), Ukraine);
             dict.Add(Country.Countries.Poland.ToString(), Poland);
             dict.Add(Country.Countries.USA.ToString(), USA);
-            dict.Add(Country.Countries.NotRegistered.ToString(), 0);
 
             var maxCount = dict.Values.Max();
+            
+            if(maxCount == 0)
+            {
+                return Country.Countries.NotRegistered.ToString();
+            }
 
             return dict.Where(c => c.Value == maxCount).FirstOrDefault().Key;
         }
