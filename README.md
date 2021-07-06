@@ -15,7 +15,7 @@ Solution contains:
 - Extra class library.
 - Gitignore file.
 
-User services:
+Used services:
 - Auto Mapper.
 - Swashbuckle.
 - Twilio.
