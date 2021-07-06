@@ -59,8 +59,8 @@ namespace MessageService.Resources.Api.Controllers
         {
             try
             {
-                var statistis = _repository.GetStatisticsAsync();
-                return statistis;
+                var statistics = _repository.GetStatisticsAsync();
+                return statistics;
             }
             catch (Exception)
             {
